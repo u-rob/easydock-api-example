@@ -71,3 +71,44 @@ Reply (Fehler):
     "status_code_description": "Dock is already in operation"
 }
 ````
+
+### takeoff_to_point
+
+Request:
+
+````json
+{
+    "message_id": "c2b865b6-478c-4b9f-80fe-1bcd98b20b91",
+    "timestamp": 1715778874224,
+    "dock": "Dock am Firmeneingang",
+    "method": "takeoff_to_point",
+    "data": {
+      "lat": 10.5,
+      "lng": 20.123
+    }
+}
+````
+
+Reply (Erfolg):
+
+````json
+{
+    "message_id": "f09a1e70-5c56-45c0-ad77-879c6183cad1",
+    "timestamp": 1715779016020,
+    "replying_to": "c2b865b6-478c-4b9f-80fe-1bcd98b20b91",
+    "status_code": 1,
+    "status_code_description": "success"
+}
+````
+
+Reply (Fehler):
+
+````json
+{
+    "message_id": "a7fd55d4-9696-4d3e-bcd6-2a69029517c4",
+    "timestamp": 1715779149528,
+    "replying_to": "c2b865b6-478c-4b9f-80fe-1bcd98b20b91",
+    "status_code": 100,
+    "status_code_description": "Dock is already in operation"
+}
+````
