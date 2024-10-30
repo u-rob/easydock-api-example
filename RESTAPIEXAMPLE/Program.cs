@@ -13,7 +13,7 @@ namespace RESTAPIEXAMPLE
             {
                 message_id = "abc",
                 timestamp = DateTimeOffset.Now.ToUnixTimeMilliseconds(),
-                dock = "Dock am Firmeneingang",
+                dock_sn = "7ABDE9081232190F",
                 data = new
                 {
                     lat = 20.0,

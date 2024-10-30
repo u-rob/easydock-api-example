@@ -15,7 +15,7 @@ Jeder Aufruf muss die folgende Spezifikation erfüllen:
 - method (string) – Die auszuführende Aktion
   - Verfügbare Aktionen:
     - start_mission 
-- dock (string) – Name des Docks, mit welchem die Aktion ausgeführt werden soll
+- dock_sn (string) – SN des Docks, mit welchem die Aktion durchgeführt werden soll.
 - data (JSON-Object) – Die Parameter für die Aktion
 
 Jede Antwort erfüllt die folgende Spezifikation:
@@ -40,7 +40,7 @@ Request:
 {
     "message_id": "c2b865b6-478c-4b9f-80fe-1bcd98b20b91",
     "timestamp": 1715778874224,
-    "dock": "Dock am Firmeneingang",
+    "dock_sn": "7ABDE9081232190F",
     "method": "start_mission",
     "data": {
       "mission_name": "Inspektionsflug"
@@ -80,7 +80,7 @@ Request:
 {
     "message_id": "c2b865b6-478c-4b9f-80fe-1bcd98b20b91",
     "timestamp": 1715778874224,
-    "dock": "Dock am Firmeneingang",
+    "dock_sn": "7ABDE9081232190F",
     "method": "takeoff_to_point",
     "data": {
       "lat": 10.5,

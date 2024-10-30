@@ -47,7 +47,7 @@ namespace MQTTAPIEXAMPLE
                 message_id = Guid.NewGuid().ToString(),
                 timestamp = DateTimeOffset.Now.ToUnixTimeMilliseconds(),
                 method = "start_mission",
-                dock = "Dock am Firmeneingang",
+                dock_sn = "7ABDE9081232190F",
                 data = new
                 {
                     mission_name = "Inspektionsflug"

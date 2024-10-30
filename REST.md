@@ -12,7 +12,7 @@ Die Aufrufe müssen im Body ein JSON Dokument mitschicken, welches die folgende 
 
 - message_id (string) – Für jede Nachricht einzigartige ID
 - timestamp (long) – Aktuelle Zeit in Millisekunden
-- dock (string) – Name des Docks, mit welchem die Aktion ausgeführt werden soll
+- dock_sn (string) – SN des Docks, mit welchem die Aktion ausgeführt werden soll
 - data (JSON-Object) – Die Parameter für die Aktion
 
 Jede Antwort erfüllt die folgende Spezifikation:
@@ -37,7 +37,7 @@ Request:
 {
     "message_id": "c2b865b6-478c-4b9f-80fe-1bcd98b20b91",
     "timestamp": 1715778874224,
-    "dock": "Dock am Firmeneingang",
+    "dock_sn": "7ABDE9081232190F",
     "data": {
       "mission_name": "Inspektionsflug"
     }
@@ -76,7 +76,7 @@ Request:
 {
     "message_id": "c2b865b6-478c-4b9f-80fe-1bcd98b20b91",
     "timestamp": 1715778874224,
-    "dock": "Dock am Firmeneingang",
+    "dock_sn": "7ABDE9081232190F",
     "data": {
       "lat": 10.5,
       "lng": 20.123
