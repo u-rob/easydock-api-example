@@ -57,6 +57,5 @@ namespace MQTTAPIEXAMPLE
             client.Publish("easydock/api/requests", Encoding.UTF8.GetBytes(json));
             Console.WriteLine("Sent message!");
         }
-
     }
 }
